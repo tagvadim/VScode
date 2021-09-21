@@ -1,0 +1,8 @@
+body {
+   font-size: 20px;
+   -webkit-box-align: center;
+   -ms-flex-align: center;
+   align-items: center;
+   border: brown;
+   grid-area: unset;
+}
