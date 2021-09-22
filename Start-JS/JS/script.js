@@ -14,12 +14,21 @@ if (age == true) {
 if (nameJs == "ECMAScript") {
    alert('Правильно!');
 }else if (nameJs == "Не знаю") {
-   alert('Иди учи')
+   alert('Иди \n учи')  // \n - перенос строки
 }else{
    alert ('Пока')
 }  */
 
 /*let nameEmployee = prompt ('Вы кто?', 'Директор или сотрудник');
 let kto = (nameEmployee == 'Директор') ? alert ('Здравстуйте!') : (nameEmployee == 'сотрудник') ? alert ('Хай') : (nameEmployee == "") ? alert ('goodbay') : '';  */
+
+//let proba = prompt("Сколько лет не виделись?", "сто");
+//alert (`почти ${proba} лет`)
+
+/*let proba = String ("79")
+console.log (typeof proba);  // - string
+proba = +proba;
+console.log (proba)   // number 79  */
+
 
 
