@@ -30,5 +30,30 @@ console.log (typeof proba);  // - string
 proba = +proba;
 console.log (proba)   // number 79  */
 
+/*let car = (1>4||5>8||3);
+console.log (car)*/
 
+/* let age = prompt("Введите число в диапазоне 14 -90", "");
+if (age >= 14 && age <= 90) {
+   alert("Все верно!");
+} else if (age <= 13 || age >= 91) {
+   alert("Число вне диапазона!");
+}  */
 
+/*
+let passport = prompt(`Кто там?`, "");
+if (passport == null) {
+   alert("Отменено");
+} else if (passport != "Админ") {
+   alert("Я вас не знаю");
+} else if (passport == "Админ") {
+   let vlog = prompt("Пароль?", "");
+   if (vlog == null) {
+      alert("Отменено");
+   } else if (vlog == "Я главный") {
+      alert("Здравствуйте");
+   }else{
+      alert("Неверный пароль");
+   }
+}
+*/
