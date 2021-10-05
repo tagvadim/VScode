@@ -185,3 +185,23 @@ console.log(menu.width);
 multipluNumeric(menu);
 console.log(menu.width);
 */
+///////////////////////////////////////////////////////////////////////////////////////
+/*
+function SampleTest (width, height, title) {
+this.width = width;
+this.height = height;
+this.title = title;
+}
+
+let proba = new SampleTest (200, 250, "My start") ;
+let proba1 = new SampleTest (220, 400, "Your start");
+let proba3 = new SampleTest (289, 530, "Their start")
+
+console.log (proba.height);
+console.log (proba1.title);
+console.log (proba3.height + proba1.height + " height ---> " + proba3.title + " and " + proba.title);
+
+delete proba.width;
+console.log (proba.width); // undefined
+*/
+//////////////////////////////////////////////////////////////////////////////////////////
