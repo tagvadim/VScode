@@ -205,3 +205,54 @@ delete proba.width;
 console.log (proba.width); // undefined
 */
 //////////////////////////////////////////////////////////////////////////////////////////
+
+// Создаем функцию-конструктор Calculator, который создает объекты с тремя методами:
+// - read () запрашивает два значения при помощи prompt и сохраняет их значения в свойствах объекта 
+// - sum () возвращает сумму введенных свойств
+// - mul () возвращает произведение введенных свойств
+
+// ******************** Мое неправильное решение ******************************
+/*
+let sum, mul
+let calculator = new Calculator ();
+calculator.read ();
+
+alert ( "Sum = " + calculator.sum() );
+alert ( "Mul = " + calculator.mul() );
+
+function Calculator () {
+this.read = function () {
+   let ing = +prompt ("Введите первое значение");
+   let ing2 = +prompt ("Введите второе значение");
+},
+this.mul = function () {
+   return (this.ing * this.ing2);
+},
+this.sum = function () {
+   return (this.ing + this.ing2);
+}
+}
+*/
+//*********************** Правильное решение ***********************************
+/*
+function Calculator () {
+   this.read = function () {
+      this.ing = +prompt ("Введите первое значение");
+      this.ing2 = +prompt ("Введите второе значение");
+};
+this.sum = function () {
+   return (this.ing + this.ing2);
+};
+this.mul = function () {
+   return (this.ing * this.ing2);
+};
+}
+
+let calculator = new Calculator ();
+calculator.read ();
+
+alert ( "Sum = " + calculator.sum() );
+alert ( "Mul = " + calculator.mul() );
+*/
+////////////////////////////////////////////////////////////////////////////////////////
+
