@@ -256,3 +256,45 @@ alert ( "Mul = " + calculator.mul() );
 */
 ////////////////////////////////////////////////////////////////////////////////////////
 
+// Создаем функцию-конструктор Accumulator (startingValue)
+// Объект который она создает должен уметь:
+// - Хранить "текущее значение" в свойстве Value. Начальное значение устанавливается в 
+// аргументе конструктора startingValue.
+// - Метод read () использует prompt для получения числа и прибавляет его к свойству value.
+// Таким образом, свойство Value является текущей суммой всего, что ввел пользователь при вызова метода
+
+//******************Неправильное решение *************************************/
+/*
+function Accumulator(startingValue) {
+   this.Value = function () {
+      return startingValue + this.sum;
+   }
+   this.read = function () {
+      this.sum = +prompt("Введите число");
+   }
+}
+
+let accumulator = new Accumulator(5); {
+   accumulator.read();
+   alert(accumulator.Value);
+}
+*/
+
+//***************Правильное решение *****************************************/
+/*
+function Accumulator(startingValue) {
+   this.Value = startingValue;
+   this.read = function () {
+      this.Value += +prompt("Введите число");
+   };
+}
+
+let accumulator = new Accumulator(5); {
+   accumulator.read();
+   accumulator.read();
+   accumulator.read();
+   alert(accumulator.Value);
+}
+*/
+//////////////////////////////////////////////////////////////////////////////////
+
