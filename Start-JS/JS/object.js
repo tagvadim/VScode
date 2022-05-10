@@ -1,3 +1,4 @@
+"use strict"
 let mySymbol = Symbol("VadimAge");
 // Создаем объект и присваиваем его к переменной bor
 let bor = {
